@@ -1,24 +1,24 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import {cards} from './cards.json'
-
-const card = cards["1"];
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import  StartScreen  from "./src/screens/StartScreen";
+import RulesScreen from "./src/screens/rulesScreen"
+import { NavigationContainer } from '@react-navigation/native';
+import LoginScreen from "./src/screens/loginScreen"
+import CardsScreen from "./src/screens/cardsScreen"
+import PodiumScreen from "./src/screens/podiumScreen"
+const Stack = createNativeStackNavigator();
 
 export default function App() {
-  console.log(card);
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName='StartScreen'>
+        <Stack.Screen name= "StartScreen" component={StartScreen}/>
+        <Stack.Screen name='RulesScreen' component={RulesScreen}/>
+        <Stack.Screen name='LoginScreen' component={LoginScreen}/>
+        <Stack.Screen name= 'CardsScreen' component={CardsScreen}/>
+        <Stack.Screen name= 'PodiumScreen' component={PodiumScreen}/>
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
