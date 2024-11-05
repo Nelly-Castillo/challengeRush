@@ -10,9 +10,11 @@ const CardsScreen = () => {
     console.log(card);
     return(
         <View>
-            <Text>Tipo de tarjeta</Text>
-            <Text>Nombre jugador</Text>
-            <Text>Aqui va las indicaciones</Text>
+            <Text>Tipo de tarjeta: { card.type}</Text>
+            <Text>Titulo:{card.title}</Text>
+            <Text>Nombre jugador:</Text>
+            <Text>{card.description}</Text>
+            <Text>{card.instructions}</Text>
             <Text>Tarjetas en juego</Text>
             <Button title='>' onPress={hadlePress}/>
         </View>

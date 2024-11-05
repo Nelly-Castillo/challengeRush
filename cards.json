@@ -1,13 +1,32 @@
 {
     "cards": {
         "1": {
-            "title":"Hola",
-            "type": "mmm",
-            "description": "mm",
-            "instructions": [
-                "mmm",
-                "mm"
-            ]
+            "title":"Coño tio",
+            "type": "Especial",
+            "image": "",
+            "description": "Durante 3 turnos debéis hablar en Castellano (Español de España)",
+            "instructions": "Cada que un jugador hable en otro idioma o variante del Español, el jugadior beberá 1 trago de su bebida, ¡jolines!"
+        },
+        "2": {
+            "title":"Manotazo",
+            "type": "Reación",
+            "image": "",
+            "description": "Si un shot no qieres beber la mano rápido debes poner",
+            "instructions": "Grita ''Manotazo'', coloca la carta en la mesa y pon una mano encima, inmediatame los demás jugadores colocarán una mano encima de tu mano formando una pila, el último en la pila de manos pierde y bebe 1 shot"
+        },
+        "3": {
+            "title":"Preguntas",
+            "type": "Grupal",
+            "image": "",
+            "description": "Apunta a un jugador y hazle una pregunta. Rápidamente y sin contestar, ese jegador debe formular otra pregunta a otro jugador, y asi sucesivamente hasta formar una cadena de preguntas",
+            "instructions": "Los jugadores no pueden: constestar, repetir preguntas o congelarse. El perdedor toma 3 tragos de su bebida"
+        },
+        "4": {
+            "title":"Granada",
+            "type": "Acción",
+            "image": "",
+            "description": "El jugador de tu elección bebe 2 shots, los jugadores a sus costados beben 1 shot cada uno",
+            "instructions": "(1-2-1)"
         }
     }
 }
