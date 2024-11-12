@@ -1,7 +1,7 @@
 import { useNavigation } from '@react-navigation/native';
 import { StatusBar } from 'expo-status-bar';
-import { TouchableOpacity } from 'react-native';
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { Text, View, Image, TouchableOpacity } from 'react-native';
+import { globalStyles } from '../styles/styles';
 
 
 const StartScreen = () => {
@@ -10,8 +10,8 @@ const StartScreen = () => {
         navigation.navigate('RulesScreen');
     };
     return (
-        <View style={styles.container}>
-            <Text style={styles.text}>Hora de jugar</Text>
+        <View style={globalStyles.container}>
+            <Text style={globalStyles.text}>Hora de jugar</Text>
             <TouchableOpacity onPress={hadlePress}>
                 <Image
                     style={
@@ -24,22 +24,11 @@ const StartScreen = () => {
                     source={require("../image/Group.png")}
                 />
             </TouchableOpacity>
-            <Text style={styles.text}>Toca el vaso continuar...</Text>
+            <Text style={globalStyles.text}>Toca el vaso continuar...</Text>
             <StatusBar style="auto" />
         </View>
     );
 }
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#7e3f8f',
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-    text: {
-        color: "#fff"
-    }
-});
 
 export default StartScreen;

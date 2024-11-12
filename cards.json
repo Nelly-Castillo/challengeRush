@@ -3,30 +3,163 @@
         "1": {
             "title":"Coño tio",
             "type": "Especial",
-            "image": "",
+            "image": "https://my.spline.design/molang3dcopy-bbc8e86c589a6ed39baeafe42915d6ea/",
             "description": "Durante 3 turnos debéis hablar en Castellano (Español de España)",
             "instructions": "Cada que un jugador hable en otro idioma o variante del Español, el jugadior beberá 1 trago de su bebida, ¡jolines!"
         },
         "2": {
             "title":"Manotazo",
             "type": "Reación",
-            "image": "",
+            "image": "https://my.spline.design/molang3dcopy-bbc8e86c589a6ed39baeafe42915d6ea/",
             "description": "Si un shot no qieres beber la mano rápido debes poner",
             "instructions": "Grita ''Manotazo'', coloca la carta en la mesa y pon una mano encima, inmediatame los demás jugadores colocarán una mano encima de tu mano formando una pila, el último en la pila de manos pierde y bebe 1 shot"
         },
         "3": {
             "title":"Preguntas",
             "type": "Grupal",
-            "image": "",
+            "image": "https://my.spline.design/molang3dcopy-bbc8e86c589a6ed39baeafe42915d6ea/",
             "description": "Apunta a un jugador y hazle una pregunta. Rápidamente y sin contestar, ese jegador debe formular otra pregunta a otro jugador, y asi sucesivamente hasta formar una cadena de preguntas",
             "instructions": "Los jugadores no pueden: constestar, repetir preguntas o congelarse. El perdedor toma 3 tragos de su bebida"
         },
         "4": {
             "title":"Granada",
             "type": "Acción",
-            "image": "",
+            "image": "https://my.spline.design/molang3dcopy-bbc8e86c589a6ed39baeafe42915d6ea/",
             "description": "El jugador de tu elección bebe 2 shots, los jugadores a sus costados beben 1 shot cada uno",
             "instructions": "(1-2-1)"
+        },
+        "5": {
+            "title": "Doblete",
+            "type": "Acción",
+            "image": "https://my.spline.design/molang3dcopy-bbc8e86c589a6ed39baeafe42915d6ea/",
+            "description": "Envías 2 shots",
+            "instructions": "(Pueden ser a 1 solo jugador, o dividirlos entre 2 jugadores)"
+        },
+        "6": {
+            "title": "Animales",
+            "type": "Grupal",
+            "image": "https://my.spline.design/molang3dcopy-bbc8e86c589a6ed39baeafe42915d6ea/",
+            "description": "Los jugadores no pueden mostrar los dientes. Cada jugador escogerá un animal (Ej. Pez). La secuencia de juego es la siguiente: A) Yo el Pez (Actúas un pez), llamdo a (escoges un jugador) León. B) Yo León (actuas como león), llamando a Elefante, C) Yo Elefante",
+            "instructions": "El primero en mostrar los dientes bebe 3 tragos"
+        },
+        "7": {
+            "title": "Los 7 pecados",
+            "type": "Grupal",
+            "image": "https://my.spline.design/molang3dcopy-bbc8e86c589a6ed39baeafe42915d6ea/",
+            "description": "Por turnos los jugadores contaran en voz alta del 1 al 37. Los números que contengan 7 o múltiplo de 7, se sustituirán por uno de los pecados capitales (Ej. 1,2,3,4,5,6,7,Gula,8,9,10,11,12,13,Ira...)",
+            "instructions": "El primer jugador que se equivoque pierde y toma 7 tragos de su bebida. Los pecados no se pueden repetir, si llegan al 37, ese jugador pierde"
+        },
+        "8": {
+            "title": "Beatbox",
+            "type": "Grupal",
+            "image": "https://my.spline.design/molang3dcopy-bbc8e86c589a6ed39baeafe42915d6ea/",
+            "description": "Haz un sonido con la boca y mantenlo. Cada jugador se irá agregando un sonido distinto y se formara una melodia",
+            "instructions": "Si alguien suena mal o fuera de tiempo, los jugadores pueden apuntarle con el dedo. Cuand alguien es señalado por 3 dedos, pierde y bebe 3 tragos. Al llegar al último jugador, mantengan la canción durante 10 segundos. Si nadie pierde, todos brindan"
+        },
+        "9": {
+            "title": "Turbochela",
+            "type": "Acción",
+            "image": "https://my.spline.design/molang3dcopy-bbc8e86c589a6ed39baeafe42915d6ea/",
+            "description": "El jugador de tu elección bebe una turbochela. Si no hay latas de cheve, bebes 1 shot",
+            "instructions": "Turbochela: toma una lata de cerveza y agitala uhn poco, no la abras. Haz un orificio en la parte lateral inferior y tápalo con tu dedo, coloca tu coba en el orificio. Abre la lata y bebe toda la cerveza rápidamente."
+        },
+        "10": {
+            "title": "Caricachupas",
+            "type": "Grupal",
+            "image": "https://my.spline.design/molang3dcopy-bbc8e86c589a6ed39baeafe42915d6ea/",
+            "description": "Escoge una categoría. Por turnos cada jugador girá una palabra de esa categoria. Cuando un jugador Repita una palabra o se congele, pierde",
+            "instructions": "El perdodor toma 3 tragos de bebida. No olvides cantar y aplaudir la clásica canción: Caricachupas, presenta, nombres de..."
+        },
+        "11": {
+            "title": "Tic Toc",
+            "type": "Acción",
+            "image": "https://my.spline.design/molang3dcopy-bbc8e86c589a6ed39baeafe42915d6ea/",
+            "description": "Programa una alarma en tu telefono con tiempo de tu elección entre 1 y 10 minutos y pon tu teléfono en la mesa boca abajo. Cuando la alrma suene, el jugador en turno y las 2 personas a sus costados beberán 2 shots",
+            "instructions": "(2-2-2). Recuerda que un turno comienza al sacar carta"
+        },
+        "12": {
+            "title": "El sirviente",
+            "type": "Especial",
+            "image": "https://my.spline.design/molang3dcopy-bbc8e86c589a6ed39baeafe42915d6ea/",
+            "description": "Felicidades, has sido contratado como sirviente",
+            "instructions": "Tus funciones son: Procurar que El Rey siempre tenga bebida, mantener la mesa limpia y servir los shots. Los jugadores deberán pedirte las cosas por favor, si lo olvidan beberán 1 trago."
+        },
+        "13": {
+            "title": "Al cielo",
+            "type": "Reación",
+            "image": "https://my.spline.design/molang3dcopy-bbc8e86c589a6ed39baeafe42915d6ea/",
+            "description": "Si un shot no quieres disfrutar, las manos al cielo deberás levantar...",
+            "instructions": "Los jugadores levantan ambas brazos, el último en hacerlo pierde y bebe 1 shot (Tu eres el juez)"
+        },
+        "14": {
+            "title": "Apodos",
+            "type": "Especial",
+            "image": "https://my.spline.design/molang3dcopy-bbc8e86c589a6ed39baeafe42915d6ea/",
+            "description": "Cada jugador bautizara a la persona a su derecha con un apodo",
+            "instructions": "Durante el resto del juego los jugadores beberán usar esos aposdos en lugar de sus nombres originales. Cada que un jugador se equivoque beberá 1 trago. Si en el juego ya existen apodos pueden combinarlos o usar cualquiera"
+        },
+        "15": {
+            "title": "Al suelo",
+            "type": "Reacción",
+            "image": "https://my.spline.design/molang3dcopy-bbc8e86c589a6ed39baeafe42915d6ea/",
+            "description": "Si un shot no quieres tomar, las malos en el suelo deberás colocar...",
+            "instructions": "Los jugadores colocan ambas manos en el suelo, el último en hacer pierde y bebe 1 shot (Tu eres el juez)"
+        },
+        "16": {
+            "title": "Zafo",
+            "type": "Reacción",
+            "image": "https://my.spline.design/molang3dcopy-bbc8e86c589a6ed39baeafe42915d6ea/",
+            "description": "Si un shot no ingerir, cruzar los brazos y zafo!, deberás decir",
+            "instructions": "Los jugadores cruzan brazos y gritan zafo, el ultimo jugador pierdde y bebe 1 shot (Tu eres el juez)"
+        },
+        "17": {
+            "title": "U la la ",
+            "type": "Especial",
+            "image": "https://my.spline.design/molang3dcopy-bbc8e86c589a6ed39baeafe42915d6ea/",
+            "description": "Dugante 3 tugnos los jugadogues: bebegán sustituig las R pog G,no pueden decig Oui (gui o wi)",
+            "instructions": "Cada que un jugadog se equivoque, tomagá 1 tgago su bebida"
+        },
+        "18": {
+            "title": "Terremoto",
+            "type": "Reacción",
+            "image": "https://my.spline.design/molang3dcopy-bbc8e86c589a6ed39baeafe42915d6ea/",
+            "description": "Del terremoto rápido tu deberás proteger, si no lo logras un shot tendrás que beber...",
+            "instructions": "Cuenta 5 segundos los jugadores deben realizar un simulacro de sismo y protegerse (bajo la mesa, bajo el marco de la puerta, triangulo de la vida). Aquellos que no lo logren pierden y beben 1 shot. Si todos lo logran brinden (Tu eres el juez)"
+        },
+        "19": {
+            "title": "Tablas",
+            "type": "Reacción",
+            "image": "https://my.spline.design/molang3dcopy-bbc8e86c589a6ed39baeafe42915d6ea/",
+            "description": "Si un shot no quieres beber, la tabla más resistente deberás ser...",
+            "instructions": "Colóquese en posición de plancha (espalda recta, solomente tus pies y manos tocan el suelo). El primer jugador en beberá 2 shots y el ultimo jugador en rendirse reportira 3 shots entre 3 jugadores"
+        }, 
+        "20": {
+            "title": "Kinder trunco",
+            "type": "Especial",
+            "image": "https://my.spline.design/molang3dcopy-bbc8e86c589a6ed39baeafe42915d6ea/",
+            "description": "Escoge una vocal durante 3 trunos los jugadores beberán cambiar todas las vocales por la vocal seleccionada",
+            "instructions": "Cada que un jugador se equivoque, tomará 1 trago de su bebida (Ej. Ta racamandamas la A. Tembeén le E se esqueche chestese)"
+        },
+        "21": {
+            "title": "Yo nunca nunca",
+            "type": "Grupal",
+            "image": "https://my.spline.design/molang3dcopy-bbc8e86c589a6ed39baeafe42915d6ea/",
+            "description": "Juguemos una ronda de yo nunca nunca. Los jugadores beberán 1 trago en cada Yo nunca que si hayan hecho",
+            "instructions": "Ej. A) Yo nunca nunca he sido infiel (Los jugadores que si hayan sido infiales beben) B) Yo nunca nunca..."
+        },
+        "22": {
+            "title": "Shot",
+            "type": "Acción",
+            "image": "https://my.spline.design/molang3dcopy-bbc8e86c589a6ed39baeafe42915d6ea/",
+            "description": "El jugador de tu elección bebe 1 shot",
+            "instructions": "Ten cuidado con el karma..."
+        },
+        "23": {
+            "title": "Un Mexicano dice",
+            "type": "Grupal ",
+            "image": "https://my.spline.design/molang3dcopy-bbc8e86c589a6ed39baeafe42915d6ea/",
+            "description": "Comienzas diciendo: Un Mexicano no dice (agrega una palabra o frase), un Mexicano dice: (sinonimo de esa frase o palabra)",
+            "instructions": "Por turnos, cada jugador dira un sinónimo o frase similar hasta que alguien pierda. No puedes repetir ni congelarte, el perdedor beberá 3 tragos o 1 shot de tequila. "
         }
     }
 }

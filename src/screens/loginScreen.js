@@ -1,6 +1,7 @@
-import { Text, View, TouchableOpacity, TextInput, StyleSheet, Button, ScrollView, Alert } from 'react-native';
+import { Text, View, TouchableOpacity, TextInput, StyleSheet, Button, ScrollView } from 'react-native';
 import React, { useState } from 'react';
 import { useNavigation } from '@react-navigation/native';
+import { globalStyles } from '../styles/styles';
 
 const LoginScreen = () => {
     const navigation = useNavigation();
@@ -32,7 +33,7 @@ const LoginScreen = () => {
     const handleSumit = () => {
         const allFilled = inputs.every(input => input.trim() !== "");
         if (allFilled) {
-            navigation.navigate('CardsScreen')
+            navigation.navigate('CardsScreen', {players: inputs});
             setErrorMessage('');
             console.log(inputs);
         } else {
@@ -42,8 +43,8 @@ const LoginScreen = () => {
     }
 
     return (
-        <ScrollView contentContainerStyle={styles.container}>
-            <Text>Numero de jugadores</Text>
+        <ScrollView contentContainerStyle={globalStyles.container}>
+            <Text style={globalStyles.text}>Numero de jugadores</Text>
             <View style={styles.counterContainer}>
                 <TouchableOpacity style={styles.button} onPress={decrease}>
                     <Text style={styles.buttonText}>-</Text>
@@ -61,7 +62,7 @@ const LoginScreen = () => {
                 </TouchableOpacity>
             </View>
 
-            <Text>Ingresa los nombres...</Text>
+            <Text style={globalStyles.text}>Ingresa los nombres...</Text>
             {inputs.map((input, index) => (
                 <TextInput
                     key={index}
