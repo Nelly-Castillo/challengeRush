@@ -1,7 +1,8 @@
 import {  Text } from 'react-native';
+import { globalStyles } from '../styles/styles';
 const PodiumScreen = () => {
     return(
-        <Text>Hola</Text>
+        <Text style={globalStyles.buttonText}>Hola</Text>
         
     )
 
