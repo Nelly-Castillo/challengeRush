@@ -77,7 +77,9 @@ const LoginScreen = () => {
                 <Text style={styles.error}>{errorMessage}</Text>
             ) : null}
 
-            <Button title='Enviar' onPress={handleSumit} />
+            <TouchableOpacity style={globalStyles.customButton} onPress={handleSumit}>
+                <Text style={globalStyles.buttonText} >Enviar </Text>
+            </TouchableOpacity>
         </ScrollView>
     );
 };
@@ -97,12 +99,13 @@ const styles = StyleSheet.create({
         height: 30,
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: '#cccccc',
+        backgroundColor: '#493548',
         marginHorizontal: 5,
     },
     buttonText: {
         fontSize: 20,
         fontWeight: 'bold',
+        color: '#fff'
     },
     input: {
         width: 50,

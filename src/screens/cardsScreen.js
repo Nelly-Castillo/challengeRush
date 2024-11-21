@@ -1,4 +1,4 @@
-import {  Button, Text, View, Image } from 'react-native';
+import {  Text, View, TouchableOpacity } from 'react-native';
 import { cards } from '../../cards.json';
 import { useNavigation, useRoute } from '@react-navigation/native';
 import { useEffect, useState } from 'react';
@@ -7,68 +7,65 @@ import { globalStyles } from '../styles/styles';
 
 
 const CardsScreen = () => {
-    const {placeHolderImage} = "https://my.spline.design/molang3dcopy-bbc8e86c589a6ed39baeafe42915d6ea/";
     const navigation = useNavigation();
     const route = useRoute();
-    
-    const [players, setPlayers] = useState (route.params?.players || []);
-    const [currentPlayerIndex, setCurrentPlayerIndex] = useState(0);
     const [card, setCard] = useState(null);
+    const [usedCards, setUsedCards] = useState([]);
 
     const hadlePress = () => {
         navigation.navigate('PodiumScreen')
     }
-
-    // const hadleNextPlayer = () => {
-    //     setCurrentPlayerIndex((prevIndex + 1 ) * keys.length); 
-    // }
-
     const getRandomCard = () => {
         const keys = Object.keys(cards);
-        const ramdomKey = keys[Math.floor(Math.random() * keys.length)];
-        setCard(cards[ramdomKey]);
-        setCurrentPlayerIndex( (prevIndex) => (prevIndex + 1 )% keys.length); 
+        const unusedKeys = keys.filter(key => !usedCards.includes(key));
+        if (unusedKeys.length === 0) {
+            setUsedCards([]);  // Reinicia la lista de cartas usadas si todas ya se jugaron
+            navigation.navigate('PodiumScreen')
+            return;
+        }
+        const randomKey = unusedKeys[Math.floor(Math.random() * unusedKeys.length)];
+        setCard(cards[randomKey]);
+        setUsedCards([...usedCards, randomKey]);
     };
 
     useEffect(() => {
         getRandomCard();
     }, []);
-    console.log(card);
-    console.log(setPlayers);
-    console.log(card);
+    // console.log(card);
+    // console.log(card);
     return(
-        <View>
+        <View style={globalStyles.container}>
             {card ? (
                 <>
-                    <Text>{card.type}</Text>
-                    <Text>{card.title}</Text>
-                    <Text>{players[currentPlayerIndex]}</Text>
-                    <Text>{card.description}</Text>
-                    <Text>{card.instructions}</Text>
+                    <View style={{width:429, marginBottom: 150}}>
+                        <View style= {{ padding: 15, backgroundColor: '#90EE90', height:50, alignItems: 'center', justifyContent: 'center'}}>
+                            <Text style={{fontSize: 16, textAlign: 'justify', color: '#493548'}}>{card.title}</Text>
+                        </View>
+                        <View style= {{ padding: 15, backgroundColor: '#FFFF99', height:50, alignItems: 'center', justifyContent: 'center' }}>
+                            <Text style={{fontSize: 16, textAlign: 'justify', color: '#493548'}}>{card.type}</Text>
+                        </View>
+                        {/* <Text style={globalStyles.text}>{players[currentPlayerIndex]}</Text> */}
+                    </View>
                     {card.image ? (
-                        <View style= {
-                            {
-                                width: '100%',
-                                height: 300, 
-                                marginVertical: 10,
-                            }
-                        }>
+                        <View style= {globalStyles.containerImage}>
                             <WebView
-                            // originWhitelist={['*']}
                             source={{uri: card.image}}
-                            // resizeMode="cover"
                             />
                         </View>
                     ) : (
                         <Text>No hay imagen disponible para esta carta.</Text>
                     )}
-                    <Button title="Otra carta" onPress={getRandomCard} />
-                    <Text>Tarjetas en juego</Text>
+                    <View style={globalStyles.butoon}>
+                        <Text style={globalStyles.text}>{card.description}</Text>
+                        <Text style={globalStyles.text}>{card.instructions}</Text>
+                    </View>
+                    <TouchableOpacity style={globalStyles.customButton} onPress={getRandomCard}>
+                        <Text style={globalStyles.buttonText} >Otra carta </Text>
+                    </TouchableOpacity>
                 </>
             ): (
                 <Text>Cargando...</Text>
             )}
-            <Button title='>' onPress={hadlePress}/>
         </View>
         
     )
