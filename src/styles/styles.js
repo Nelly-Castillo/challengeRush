@@ -10,16 +10,18 @@ export const globalStyles = StyleSheet.create({
         backgroundColor: '#975aa8',
         alignItems: 'center',
         justifyContent: 'center',
+        height: '50%',
+        marginTop: 45
     },
     containerImage: {
-        width: '100%',
-        height: 300, 
-        marginVertical: 10,
+        width: '80%',
+        height: 400, 
+        padding: 10,
     },
     text: {
         color: "#fff",
         fontSize: 16,
-        textAlign: 'center',
+        textAlign: 'justify',
     },
     title: {
         color: "#fff",
@@ -28,7 +30,7 @@ export const globalStyles = StyleSheet.create({
         textAlign: 'center'
     },
     butoon: {
-        margin: 10,
+        margin: 30,
         display: 'flex',
         flexDirection: 'column'
     },

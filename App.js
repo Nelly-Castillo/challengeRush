@@ -15,7 +15,7 @@ export default function App() {
   return (
     <View style={globalStyles.containerMain}>
         <NavigationContainer>
-          <Stack.Navigator initialRouteName='StartScreen'>
+          <Stack.Navigator initialRouteName='StartScreen' screenOptions={{headerShown: false}}>
             <Stack.Screen name= "StartScreen" component={StartScreen}/>
             <Stack.Screen name='RulesScreen' component={RulesScreen}/>
             <Stack.Screen name='LoginScreen' component={LoginScreen}/>
